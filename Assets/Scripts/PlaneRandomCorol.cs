@@ -8,7 +8,7 @@ public class PlaneRandomCorol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var index = Random.Range(0, Animations.Length - 1);
+        var index = Random.Range(0, Animations.Length);
         GetComponent<Animator>().Play(Animations[index]);
     }
 
