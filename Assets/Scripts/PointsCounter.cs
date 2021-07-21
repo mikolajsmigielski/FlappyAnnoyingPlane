@@ -9,12 +9,18 @@ public class PointsCounter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SavePoints();
         RefreshText();
     }
     public void IncrementPoints()
     {
         Points++;
+        SavePoints();
         RefreshText();
+    }
+    void SavePoints()
+    {
+        PlayerPrefs.SetInt("CurrentPoints", Points);
     }
     void RefreshText()
     {
