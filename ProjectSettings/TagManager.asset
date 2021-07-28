@@ -44,3 +44,6 @@ TagManager:
   - name: Background
     uniqueID: 1151208767
     locked: 0
+  - name: TrailRender
+    uniqueID: 2842144253
+    locked: 0
